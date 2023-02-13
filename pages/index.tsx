@@ -1,2 +1,2 @@
-import { HomePage } from '#pages';
+import { HomePage } from '#pages/index';
 export default HomePage;

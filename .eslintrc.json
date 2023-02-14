@@ -1,12 +1,14 @@
 {
-	"extends": ["next/core-web-vitals", "prettier"],
-	"max-len": [
-		"warn",
-		{
-			"code": 80,
-			"ignoreStrings": true,
-			"ignoreTemplateLiterals": true,
-			"ignoreComments": true
-		}
-	]
+  "extends": "next/core-web-vitals",
+  "root": true,
+  "max-len": [
+    "warn",
+    {
+      "code": 80,
+      "tabWidth": 2,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreComments": true
+    }
+  ]
 }

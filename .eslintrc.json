@@ -2,6 +2,9 @@
   "extends": ["next/core-web-vitals", "prettier"],
   "root": true,
   "rules": {
+    "no-unused-vars": "warn",
+    "no-var": "error",
+    "eqeqeq": "error",
     "max-len": [
       "warn",
       {
@@ -12,5 +15,6 @@
         "ignoreComments": true
       }
     ]
-  }
+  },
+  "reportUnusedDisableDirectives": true
 }

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start:prod": "rimraf .next && npm run build && npm run start"
+    "start:prod": "rimraf .next && next build && next start -p $npm_config_port"
   },
   "dependencies": {
     "@next/font": "13.1.6",

@@ -4,6 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "removeComments": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -16,9 +17,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "#app": ["./src/app/"],
-      "#pages": ["./src/pages/"],
-      "#shared": ["./src/shared/"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

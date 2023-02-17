@@ -1,3 +1,14 @@
 :root {
+  // Colour palette
+  $primary-light: #fafafa;
+  $primary-dark: #1e1e24;
+  $primary-grey: #767474;
+  $primary-blue: #64afd3;
+  $secondary-blue: #337ca0;
 
+  // Device breakpoints
+  $min-mobile-width: 576px;
+  $min-tablet-width: 768px;
+  $min-desktop-width: 1200px;
+  $min-desktopXL-width: 1400px;
 }

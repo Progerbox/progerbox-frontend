@@ -1,3 +1,3 @@
 import { App } from "@/app";
-import "@/shared/styles/styles.scss";
+import "@/shared/styles/globals.scss";
 export default App;

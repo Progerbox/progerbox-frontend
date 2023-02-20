@@ -1,19 +1,19 @@
 import styles from "./header.module.scss";
 
-interface IProp {
+interface IProps {
   name: string;
 }
 
-export const Header: React.FC<IProp> = ({ name }) => {
+export const Header: React.FC<IProps> = ({ name }) => {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.header}>
         <div className={styles.headerLeft}>
-          <img className={styles.logoIcon} src="/icons/Logo.svg" />
+          <img className={styles.logoIcon} src="/icons/logo.svg" />
           {name}
         </div>
         <div className={styles.headerRight}>
-          <img src="/icons/Logout.svg" />
+          <img src="/icons/logout.svg" />
         </div>
       </div>
     </div>

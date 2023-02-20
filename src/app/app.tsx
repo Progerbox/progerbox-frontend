@@ -8,8 +8,8 @@ const roboto = Roboto({
 });
 export const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <main className={roboto.className}>
+    <div className={roboto.className}>
       <Component {...pageProps} />
-    </main>
+    </div>
   );
 };

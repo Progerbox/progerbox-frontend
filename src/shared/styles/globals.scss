@@ -1,3 +1,44 @@
-:root {
+@use "./normalize";
 
+:root {
+  /* COLOUR PALETTE */
+  // Light theme
+  --main-background: #fafafa;
+  --main-text-headings: #1e1e24;
+  --main-text: #767474;
+  --main-header-bar: #337ca0;
+  --main-headings: #64afd3;
+
+  // Dark theme
+  // TBD
+
+  /* DEVICE BREAKPOINTS */
+  --min-mobile-width: 576px;
+  --min-tablet-width: 768px;
+  --min-desktop-width: 1200px;
+  --min-desktopXL-width: 1400px;
+
+  // @mixin mobile {
+  //   @media (min-width: var(--min-mobile-width)) and (max-width: var(--min-tablet-width)) {
+  //     @content;
+  //   }
+  // }
+
+  // @mixin tablet {
+  //   @media (min-width: var(--min-tablet-width)) and (max-width: var(--min-desktop-width)) {
+  //     @content;
+  //   }
+  // }
+
+  // @mixin tablet {
+  //   @media (min-width: var(--min-desktop-width)) and (max-width: var(--min-desktopXL-width)) {
+  //     @content;
+  //   }
+  // }
+
+  // @mixin desktopXL {
+  //   @media (min-width: var(--min-desktopXL-width)) {
+  //     @content;
+  //   }
+  // }
 }

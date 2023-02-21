@@ -1,0 +1,32 @@
+.headerContainer {
+  font-size: 1.75em;
+  color: var(--main-background);
+  background-color: var(--main-header-bar);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  @extend .headerLeft;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.headerRight {
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.logoIcon {
+  @extend .headerRight;
+  transition: 2s;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+}

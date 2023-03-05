@@ -1,4 +1,5 @@
 @use "./normalize";
+// @import "./mixins"; // need to figure out how to use '@use' instead of '@import'
 
 :root {
   /* COLOUR PALETTE */
@@ -12,33 +13,6 @@
   // Dark theme
   // TBD
 
-  /* DEVICE BREAKPOINTS */
-  --min-mobile-width: 576px;
-  --min-tablet-width: 768px;
-  --min-desktop-width: 1200px;
-  --min-desktopXL-width: 1400px;
+  /* GLOBAL PAGE CONTAINER STYLES */
 
-  // @mixin mobile {
-  //   @media (min-width: var(--min-mobile-width)) and (max-width: var(--min-tablet-width)) {
-  //     @content;
-  //   }
-  // }
-
-  // @mixin tablet {
-  //   @media (min-width: var(--min-tablet-width)) and (max-width: var(--min-desktop-width)) {
-  //     @content;
-  //   }
-  // }
-
-  // @mixin tablet {
-  //   @media (min-width: var(--min-desktop-width)) and (max-width: var(--min-desktopXL-width)) {
-  //     @content;
-  //   }
-  // }
-
-  // @mixin desktopXL {
-  //   @media (min-width: var(--min-desktopXL-width)) {
-  //     @content;
-  //   }
-  // }
 }

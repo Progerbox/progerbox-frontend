@@ -6,10 +6,11 @@ const roboto = Roboto({
   weight: ["500"],
   style: ["normal"],
 });
+
 export const App = ({ Component, pageProps }: AppProps) => {
   return (
     <div className={roboto.className}>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </div>
   );
 };

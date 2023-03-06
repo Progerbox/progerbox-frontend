@@ -1,9 +1,9 @@
-import { sidebarData, topicData } from "../constants/dataPlaceholders";
+import { sidebarData } from "../constants/dataPlaceholders";
 import { Header } from "../header";
 import { Sidebar } from "./sidebar/sidebar";
 import { Topic } from "./topic/topic";
 import styles from "./layout.module.scss";
-import { Articles } from './articles/articles';
+import { Articles } from "./articles/articles";
 
 export const Layout = () => {
   return (
@@ -11,7 +11,7 @@ export const Layout = () => {
       <Header />
       <div className={styles.layoutContainer}>
         <Sidebar {...sidebarData} />
-        <Topic {...topicData} />
+        <Topic {...sidebarData.data[0].topics[0]} />
         <Articles />
       </div>
     </div>

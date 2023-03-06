@@ -9,7 +9,6 @@
 ```bash
 # For development purposes
 npm run dev
-npm run lint
 
 # For production purposes
 npm run build

@@ -2,7 +2,7 @@ import { ISidebarSection, SidebarSection } from "./sidebarSection";
 import styles from "./sidebar.module.scss";
 
 interface ISidebar {
-  data: Array<ISidebarSection>;
+  data: ISidebarSection[];
 }
 
 export const Sidebar: React.FC<ISidebar> = ({ data }) => {
@@ -12,7 +12,7 @@ export const Sidebar: React.FC<ISidebar> = ({ data }) => {
         <SidebarSection
           key={index}
           section={data.section}
-          subSections={data.subSections}
+          topics={data.topics}
         />
       ))}
     </div>

@@ -6,8 +6,8 @@ interface ITopic {
   description: string;
 }
 
-export const Topic: React.FC<ITopic[]> = ({ ...topicData }) => {
-  const { title, description } = topicData[0];
+export const Topic: React.FC<ITopic> = (data) => {
+  const { title, description } = data;
 
   return (
     <div className={styles.container}>

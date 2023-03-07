@@ -1,5 +1,5 @@
 .sidebarSection h3 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .sidebarSection a {
@@ -10,12 +10,12 @@
   font-size: 1rem;
   padding: 3px 8px;
   &:hover {
-    color: #000; // picked randomly, will need to take into consideration with team
+    color: #000; // TODO picked randomly, will need to take into consideration with team
   }
 }
 
 .line {
   height: 0.5px;
-  background-color: #aaa; // i'm not sure if we should add variable specifically for horizontal lines
+  background-color: #aaa; // TODO i'm not sure if we should add variable specifically for horizontal lines
   margin-bottom: 10px;
 }

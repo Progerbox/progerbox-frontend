@@ -8,13 +8,14 @@
     "max-len": [
       "warn",
       {
-        "code": 80,
+        "code": 120,
         "tabWidth": 2,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true,
         "ignoreComments": true
       }
-    ]
+    ],
+    "quotes": ["warn", "single"]
   },
   "reportUnusedDisableDirectives": true
 }

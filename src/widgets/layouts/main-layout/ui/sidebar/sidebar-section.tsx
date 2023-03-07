@@ -1,4 +1,5 @@
-import styles from "./sidebarSection.module.scss";
+import styles from './sidebar-section.module.scss';
+import React from 'react';
 
 export interface ISidebarSection {
   id?: number;
@@ -7,10 +8,12 @@ export interface ISidebarSection {
     id: number;
     title: string;
     description: string;
-  }[];
+  }[]; // TODO move out types to entities layer
 }
 
-export const SidebarSection: React.FC<ISidebarSection> = ({
+type Props = ISidebarSection;
+
+export const SidebarSection: React.FC<Props> = ({
   section,
   topics,
 }) => {

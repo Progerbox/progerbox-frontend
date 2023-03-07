@@ -1,10 +1,10 @@
-@import '../styles/mixins';
+@import '@/shared/styles/mixins';
 
 .headerContainer {
   font-size: 1.75em;
   color: var(--main-background);
   background-color: var(--main-header-bar);
-  box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.12);
 }
 
 .headerLeft {

@@ -1,4 +1,4 @@
-@import "../../../styles/mixins";
+@import '@/shared/styles/mixins';
 
 .sidebar {
   min-width: 270px;
@@ -9,8 +9,8 @@
 }
 
 @include breakpoint(xl, max) {
-  // will need to think of burger menu
+  // TODO will need to think of burger menu
   .sidebar {
     display: none;
   }
-} // would probably be better that kind of styles to move to layout styles somehow
+} // TODO would probably be better that kind of styles to move to layout styles somehow

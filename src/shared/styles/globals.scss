@@ -1,3 +1,15 @@
-:root {
+@use "./normalize";
+// @import "./mixins"; // need to figure out how to use '@use' instead of '@import'
 
+:root {
+  /* COLOUR PALETTE */
+  // Light theme
+  --main-background: #fafafa;
+  --main-text-headings: #1e1e24;
+  --main-text: #767474;
+  --main-header-bar: #337ca0;
+  --main-headings: #64afd3;
+
+  // Dark theme
+  // TBD
 }

@@ -1,7 +1,10 @@
+@import '../styles/mixins';
+
 .headerContainer {
   font-size: 1.75em;
   color: var(--main-background);
   background-color: var(--main-header-bar);
+  box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.12);
 }
 
 .headerLeft {
@@ -11,14 +14,25 @@
 
 .header {
   @extend .headerLeft;
-  padding: 0 20px;
   justify-content: space-between;
+  width: 75%;
+  margin: auto;
+
+  @include breakpoint(xxl, max) {
+    width: 85%;
+  }
+
+  @include breakpoint(md, max) {
+    width: 100%;
+  }
 }
 
 .headerRight {
   padding: 10px;
+  transition: transform 0.4s ease-in-out;
   &:hover {
     cursor: pointer;
+    transform: scale(1.2);
   }
 }
 

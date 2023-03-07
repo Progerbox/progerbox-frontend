@@ -1,0 +1,21 @@
+@import "../../styles/mixins";
+
+.layoutContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  width: 75%;
+  margin: auto;
+
+  @include breakpoint(xxl, max) {
+    width: 85%;
+  }
+
+  @include breakpoint(md, max) {
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

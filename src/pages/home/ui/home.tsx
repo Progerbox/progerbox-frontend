@@ -1,5 +1,5 @@
-import { Header } from "../../../shared/components/header";
+import { Header } from '@/shared/components/header'
 
-export const HomePage = () => {
-  return <Header name="Progerbox" />;
+export const Home = () => {
+  return <Header />;
 };

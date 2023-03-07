@@ -1,4 +1,4 @@
-@import '@/shared/styles/mixins';
+@use '@/shared/styles/mixins';
 
 .layoutContainer {
   display: flex;
@@ -8,15 +8,21 @@
   width: 75%;
   margin: auto;
 
-  @include breakpoint(xxl, max) {
+  @include mixins.breakpoint(xxl, max) {
     width: 85%;
   }
 
-  @include breakpoint(md, max) {
+  @include mixins.breakpoint(md, max) {
     width: 100%;
     gap: 20px;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+}
+
+@include mixins.breakpoint(xl, max) {
+  .sidebar {
+    display: none;
   }
 }
 
@@ -26,3 +32,5 @@
   height: 280px;
   background-color: #aaa;
 }
+
+

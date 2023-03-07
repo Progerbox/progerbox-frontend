@@ -10,12 +10,12 @@
   font-size: 1rem;
   padding: 3px 8px;
   &:hover {
-    color: #000; // TODO picked randomly, will need to take into consideration with team
+    color: var(--hover-text-color);
   }
 }
 
 .line {
   height: 0.5px;
-  background-color: #aaa; // TODO i'm not sure if we should add variable specifically for horizontal lines
+  background-color: #aaa;
   margin-bottom: 10px;
 }

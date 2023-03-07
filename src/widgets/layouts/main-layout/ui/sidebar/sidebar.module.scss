@@ -1,16 +1,7 @@
-@import '@/shared/styles/mixins';
-
 .sidebar {
   min-width: 270px;
   height: calc(100vh - 66px);
   padding: 8px;
-  color: var(--main-text);
+  color: var(--text-color);
   box-shadow: 2px 8px 7px 5px rgba(0, 0, 0, 0.12);
 }
-
-@include breakpoint(xl, max) {
-  // TODO will need to think of burger menu
-  .sidebar {
-    display: none;
-  }
-} // TODO would probably be better that kind of styles to move to layout styles somehow

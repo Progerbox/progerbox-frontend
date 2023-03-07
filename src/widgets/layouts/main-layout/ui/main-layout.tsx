@@ -14,7 +14,7 @@ export const MainLayout: FC<Props> = ({ children }) => {
     <div>
       <Header />
       <div className={styles.layoutContainer}>
-        <Sidebar categoriesData={categoriesStub.data} />
+        <Sidebar className={styles.sidebar} categoriesData={categoriesStub.data} />
         {children ?? null}
         <Column>
           <div className={styles.columnBlockTop} />

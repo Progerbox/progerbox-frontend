@@ -14,13 +14,7 @@ type UniteClasses = {
  * uniteClasses(['class1', ' class2  ', null]) => 'class1 class2'
  */
 export const uniteClasses: UniteClasses = (...args: any[]) => {
-  let classes;
-
-  if (Array.isArray(args[0])) {
-    classes = args[0] as ClassName[];
-  } else {
-    classes = args as ClassName[];
-  }
+  let classes: ClassName[] = Array.isArray(args[0]) ? args[0] : args;
 
   return classes.reduce((str: string, name: ClassName) => {
     if (name) return str ? `${str} ${name.trim()}` : name;

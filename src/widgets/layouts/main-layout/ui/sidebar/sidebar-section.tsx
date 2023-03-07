@@ -1,5 +1,5 @@
 import styles from './sidebar-section.module.scss';
-import React from 'react';
+import React, { FC } from 'react';
 
 export interface ISidebarSection {
   id?: number;
@@ -13,7 +13,7 @@ export interface ISidebarSection {
 
 type Props = ISidebarSection;
 
-export const SidebarSection: React.FC<Props> = ({
+export const SidebarSection: FC<Props> = ({
   section,
   topics,
 }) => {

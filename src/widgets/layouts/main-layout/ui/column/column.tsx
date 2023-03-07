@@ -1,5 +1,5 @@
 import styles from './column.module.scss';
-import React, { ReactNode } from 'react';
+import React, { FC, ReactNode } from 'react';
 import { uniteClasses } from '@/shared';
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
   className?: string;
 }
 
-export const Column: React.FC<Props> = ({ children, className }) => {
+export const Column: FC<Props> = ({ children, className }) => {
   return (
     <div className={uniteClasses(styles.container, className)}>
       {children ?? null}

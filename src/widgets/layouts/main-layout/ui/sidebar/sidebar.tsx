@@ -1,6 +1,6 @@
 import { ISidebarSection, SidebarSection } from './sidebar-section';
 import styles from './sidebar.module.scss';
-import React from 'react';
+import React, { FC } from 'react';
 import { uniteClasses } from '@/shared';
 
 interface ISidebar {
@@ -9,7 +9,7 @@ interface ISidebar {
 }
 
 // TODO in future - move out to shared layer and reuse there (to make different layouts with sidebar)
-export const Sidebar: React.FC<ISidebar> = ({ categoriesData, className }) => {
+export const Sidebar: FC<ISidebar> = ({ categoriesData, className }) => {
   return (
     <div className={uniteClasses(styles.sidebar, className)}>
       {categoriesData.map((data, index) => (

@@ -1,5 +1,5 @@
 import styles from './topic.module.scss';
-import React from 'react';
+import React, { FC } from 'react';
 
 interface Props {
   id: number;
@@ -7,7 +7,7 @@ interface Props {
   description: string;
 }
 
-export const Topic: React.FC<Props> = ({ title, description }) => {
+export const Topic: FC<Props> = ({ title, description }) => {
   return (
     <div className={styles.container}>
       <h2>{title}</h2>

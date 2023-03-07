@@ -20,11 +20,13 @@
   }
 }
 
-@include mixins.breakpoint(xl, max) {
-  .sidebar {
+.sidebar {
+  @include mixins.breakpoint(xl, max) {
     display: none;
   }
 }
+
+
 
 .columnBlockTop,
 .columnBLockBottom {

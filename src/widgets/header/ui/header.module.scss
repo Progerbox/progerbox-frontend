@@ -10,10 +10,12 @@
 .headerLeft {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .header {
-  @extend .headerLeft;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 75%;
   margin: auto;
@@ -29,11 +31,7 @@
 
 .headerRight {
   padding: 10px;
-  transition: transform 0.4s ease-in-out;
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-  }
+  cursor: pointer;
 }
 
 .logoIcon {

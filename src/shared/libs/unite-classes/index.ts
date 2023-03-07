@@ -10,8 +10,8 @@ type UniteClasses = {
 /**
  * Function to unite string classes into normal string
  * @example
- * uniteClasses(class1, class2, class3)
- * uniteClasses([class1, class2, class3])
+ * uniteClasses('class1', ' class2  ', null) => 'class1 class2'
+ * uniteClasses(['class1', ' class2  ', null]) => 'class1 class2'
  */
 export const uniteClasses: UniteClasses = (...args: any[]) => {
   let classes;
@@ -23,7 +23,7 @@ export const uniteClasses: UniteClasses = (...args: any[]) => {
   }
 
   return classes.reduce((str: string, name: ClassName) => {
-    if (name) return str ? `${str} ${name}` : name;
+    if (name) return str ? `${str} ${name.trim()}` : name;
     return str;
   }, '')
 }

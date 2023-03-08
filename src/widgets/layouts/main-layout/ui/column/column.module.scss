@@ -1,4 +1,4 @@
-@import "../../../styles/mixins";
+@use "@/shared/styles/mixins";
 
 .container {
   margin: 60px 0;
@@ -7,14 +7,7 @@
   gap: 30px;
 }
 
-.top,
-.bottom {
-  width: 280px;
-  height: 280px;
-  background-color: #aaa;
-}
-
-@include breakpoint(md, max) {
+@include mixins.breakpoint(md, max) {
   .container {
     flex-direction: row;
     margin: 20px auto;

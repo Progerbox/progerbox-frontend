@@ -1,0 +1,44 @@
+@use "@/shared/styles/mixins";
+
+.headerContainer {
+  font-size: 1.75em;
+  color: var(--background-color);
+  background-color: var(--header-bar-color);
+  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.12);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+
+  @include mixins.breakpoint(xxl, max) {
+    width: 85%;
+  }
+
+  @include mixins.breakpoint(md, max) {
+    width: 100%;
+  }
+}
+
+.headerRight {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logoIcon {
+  padding: 10px;
+  transition: transform 2s;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+}

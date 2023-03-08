@@ -1,4 +1,4 @@
-import { Header } from '@/shared/components/header'
+import { Header } from '@/widgets/header/ui/header'
 
 export const Home = () => {
   return <Header />;

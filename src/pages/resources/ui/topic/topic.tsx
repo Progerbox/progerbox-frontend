@@ -1,14 +1,13 @@
-import styles from "./topic.module.scss";
+import styles from './topic.module.scss';
+import React, { FC } from 'react';
 
-interface ITopic {
+interface Props {
   id: number;
   title: string;
   description: string;
 }
 
-export const Topic: React.FC<ITopic> = (data) => {
-  const { title, description } = data;
-
+export const Topic: FC<Props> = ({ title, description }) => {
   return (
     <div className={styles.container}>
       <h2>{title}</h2>

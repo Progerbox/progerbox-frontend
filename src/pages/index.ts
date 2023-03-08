@@ -1,4 +1,5 @@
-
+// A layer for storing pages (but not for routing)
+// https://feature-sliced.design/docs/reference/units/layers/pages
 
 export { Home } from './home/ui/home';
 export { Admin } from './admin/ui/admin';

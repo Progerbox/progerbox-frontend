@@ -3,35 +3,35 @@
 .layoutContainer {
   display: flex;
   flex-direction: row;
-  gap: 40px;
 
-  width: 75%;
+  width: 85%;
   margin: auto;
 
   @include mixins.breakpoint(xxl, max) {
-    width: 85%;
+    width: 100%;
+  }
+  @include mixins.breakpoint(xl, max) {
+    gap: 0;
   }
 
   @include mixins.breakpoint(md, max) {
     width: 100%;
-    gap: 20px;
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
 
 .sidebar {
-  @include mixins.breakpoint(xl, max) {
+  @include mixins.breakpoint(xxl, max) {
     display: none;
   }
 }
 
 
-
 .columnBlockTop,
 .columnBLockBottom {
-  width: 280px;
-  height: 280px;
+  width: 286px;
+  height: 286px;
   background-color: #aaa;
 }
 

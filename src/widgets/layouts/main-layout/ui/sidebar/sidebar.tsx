@@ -13,11 +13,7 @@ export const Sidebar: FC<Props> = ({ categoriesData, className }) => {
   return (
     <div className={uniteClasses(styles.sidebar, className)}>
       {categoriesData.map((data, index) => (
-        <SidebarSection
-          key={index}
-          section={data.section}
-          topics={data.topics}
-        />
+        <SidebarSection key={index} section={data.section} topics={data.topics} />
       ))}
     </div>
   );

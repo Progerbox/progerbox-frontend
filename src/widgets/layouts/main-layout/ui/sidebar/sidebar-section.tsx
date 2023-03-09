@@ -13,10 +13,7 @@ export interface ISidebarSection {
 
 type Props = ISidebarSection;
 
-export const SidebarSection: FC<Props> = ({
-  section,
-  topics,
-}) => {
+export const SidebarSection: FC<Props> = ({ section, topics }) => {
   return (
     <div className={styles.sidebarSection}>
       <h3>{section}</h3>

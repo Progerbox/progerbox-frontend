@@ -8,5 +8,5 @@ export const Resources = () => {
     <MainLayout>
       <Topic id={topic.id} title={topic.title} description={topic.description} />
     </MainLayout>
-  )
+  );
 };

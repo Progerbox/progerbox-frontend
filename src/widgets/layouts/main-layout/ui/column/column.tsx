@@ -8,9 +8,5 @@ interface Props {
 }
 
 export const Column: FC<Props> = ({ children, className }) => {
-  return (
-    <div className={uniteClasses(styles.container, className)}>
-      {children ?? null}
-    </div>
-  );
+  return <div className={uniteClasses(styles.container, className)}>{children ?? null}</div>;
 };

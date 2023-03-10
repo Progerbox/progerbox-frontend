@@ -3,14 +3,14 @@ import { Roboto } from '@next/font/google';
 
 const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['500'],
+  weight: ['400'],
   style: ['normal'],
 });
 
 export const App = ({ Component, pageProps }: AppProps) => {
   return (
     <div className={roboto.className}>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </div>
   );
 };

@@ -1,9 +1,32 @@
+@use '@/shared/styles/mixins';
+
 .container {
   padding: 15px;
+  margin: 10px 40px;
+
+  h2,
+  .description {
+    line-height: 1.17rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
 }
 
 .line {
   height: 0.5px;
   background-color: #000;
   margin-bottom: 10px;
+}
+
+@include mixins.breakpoint(md, max) {
+  .container {
+    margin: 10px 50px;
+  }
 }

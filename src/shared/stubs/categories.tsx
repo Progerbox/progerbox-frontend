@@ -13,8 +13,7 @@ export const categoriesStub = {
         {
           id: 2,
           title: 'Безопасность',
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dicta molestiae sint.',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dicta molestiae sint.',
         },
         {
           id: 3,
@@ -43,8 +42,7 @@ export const categoriesStub = {
         {
           id: 2,
           title: 'JavaScript (Browser)',
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         },
       ],
     },
